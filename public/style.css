@@ -1,0 +1,190 @@
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f0f0f0;
+    margin: 0;
+}
+
+#main-div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chat-container {
+    display: flex;
+    width: 600px;
+    height: 400px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#chat-control{
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    align-items: center;
+    align-content: center;
+}
+
+.users {
+    width: 30%;
+    padding: 10px;
+    background: #2c3e50;
+    color: white;
+}
+
+.users ul {
+    list-style: none;
+    padding: 0;
+}
+
+.chat-box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+#messageInput {
+    width: 80%;
+    height: 40px;
+}
+
+#sendBtn {
+    width: 18%;
+    height: 40px;
+    background: #27ae60;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* User name container */
+#session-username{
+    display: flex;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+.username-container {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    margin: 16px;
+    max-width: 300px;
+    max-height: 200px;
+    text-align: center;
+}
+
+#username-tittle {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+#usernameInput {
+    width: 90%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#loginBtn{
+    background-color: green; 
+    color: white;
+    border: 0px;
+    width: 60px;
+    height: 30px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.message-item{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.self-chat{
+    align-items: end;
+}
+
+li{
+    cursor: pointer;
+}
+
+#messages {
+    background-color: rgb(230, 228, 228);
+    flex: 1;
+    overflow-y: auto;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    display: flex;  /* Enable flexbox for the container */
+    flex-direction: column; /* Stack the messages vertically */
+    gap: 5px; /* Optional: Add space between messages */
+    width: 100%; /* Ensure the messages container takes the full width of its parent */
+}
+
+.sender {
+    width: fit-content; /* Let the sender's message width be based on its content */
+    max-width: 80%; /* Limit the sender's width to 80% of the container */
+    word-wrap: break-word; /* Break words when necessary */
+    white-space: normal; /* Allow text wrapping */
+    padding: 10px;
+    border-radius: 15px;
+    margin: 2px;
+    background-color: rgb(103, 159, 228);
+    color: white;
+    align-self: flex-end; /* Align sender message to the right */
+}
+
+.receiver {
+    width: fit-content; /* Let the receiver's message width be based on its content */
+    max-width: 80%; /* Limit the receiver's width to 80% of the container */
+    word-wrap: break-word; /* Break words when necessary */
+    white-space: normal; /* Allow text wrapping */
+    padding: 10px;
+    border-radius: 15px;
+    margin: 2px;
+    background-color: rgb(39, 85, 132);
+    color: white;
+    align-self: flex-start; /* Align receiver message to the left */
+}
+
+#receiver-name{
+    display: flex;
+    flex-direction: column;
+    height: 35px;
+    background-color: #2c3e50;
+    border-left: #ccc solid 1px;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+}
+.selected-user{
+    background-color: rgb(103, 159, 228);
+}
+
+.date{
+    font-size: x-small;
+    align-self: flex-end;
+    display: flex;
+}
+.online-message{
+    color: white;
+    font-size: x-small;
+    font-weight: normal;
+}
+.seen-message{
+    margin-left: 3px;
+    margin-bottom: 8px;
+}
