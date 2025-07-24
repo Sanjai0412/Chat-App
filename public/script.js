@@ -23,7 +23,7 @@ document.getElementById("select-btn").addEventListener("click", (e) => {
   }
 });
 // Send message
-document.getElementById("sendBtn").addEventListener("click", sendMessage());
+document.getElementById("sendBtn").addEventListener("click", sendMessage);
 document.addEventListener("keydown", (event) => {
   if (event.key === "Enter") {
     sendMessage();
