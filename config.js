@@ -1,9 +1,8 @@
 const mongoose = require("mongoose");
+require("dotenv").config();
 
 mongoose
-  .connect(
-    "mongodb+srv://Sanjai:mongodb.shit@sanjaicluster.cuuzvpp.mongodb.net/?retryWrites=true&w=majority&appName=SanjaiCluster"
-  )
+  .connect(process.env.MONGO_URI)
   .then(() => console.log("Database connected"))
   .catch((e) => console.log("Not Connected", e));
 
