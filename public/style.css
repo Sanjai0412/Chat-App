@@ -39,13 +39,12 @@ body {
     padding: 10px;
     background: #2c3e50;
     color: white;
-    margin-bottom: 20px;
+    margin: 5px;
 }
 
 .users ul {
     list-style: none;
     padding: 0;
-    overflow-y: auto;
 }
 
 .chat-box {
