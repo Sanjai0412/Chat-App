@@ -44,6 +44,7 @@ body {
 .users ul {
     list-style: none;
     padding: 0;
+    overflow-y: auto;
 }
 
 .chat-box {
